@@ -132,7 +132,8 @@ String getHighestIosVersion(Map iOSVersions) {
 
 /// Create list of avds,
 List<String> getAvdNames() {
-  return run.cmd('emulator', ['-list-avds'], '.', true).split('\n');
+  //return run.cmd('emulator', ['-list-avds'], '.', true).split('\n');
+  return [];
 }
 
 /// Get the highest available avd version for the android emulator.

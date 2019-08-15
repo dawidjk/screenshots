@@ -118,6 +118,7 @@ class Config {
     if (configInfo['devices']['ios'] != null) {
       final devices = utils.getIosDevices(allDevices);
       final Map simulators = utils.getIosSimulators();
+
       for (String deviceName in configInfo['devices']['ios'].keys) {
         if (ImageProcessor.isFrameRequired(
             configInfo, DeviceType.ios, deviceName)) {
