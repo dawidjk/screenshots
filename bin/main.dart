@@ -75,7 +75,7 @@ void main(List<String> arguments) async {
   }
 
   // check adb is found
-  getAdbPath();
+  // getAdbPath();
 
   // validate args
   if (!await File(argResults[configArg]).exists()) {
